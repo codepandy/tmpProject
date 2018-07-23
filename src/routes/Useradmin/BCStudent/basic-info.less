@@ -1,0 +1,46 @@
+@import '~antd/lib/style/themes/default.less';
+@import '../../../utils/utils.less';
+
+.buttonContainer {
+  margin-bottom: 15px;
+}
+.marginLeft {
+  margin-left: 15px;
+}
+.item_container {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.offlineCard {
+  :global {
+    .ant-tabs-ink-bar {
+      bottom: auto;
+    }
+    .ant-tabs-bar {
+      border-bottom: none;
+    }
+    .ant-tabs-nav-container-scrolling {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+    .ant-tabs-tab-prev-icon:before {
+      position: relative;
+      left: 6px;
+    }
+    .ant-tabs-tab-next-icon:before {
+      position: relative;
+      right: 6px;
+    }
+  }
+
+  :global(.ant-tabs-tab-active) h4 {
+    color: @primary-color;
+  }
+}
+.card_list_wrp {
+  max-height: 500px;
+  min-height: 300px;
+  overflow-y: scroll;
+  padding-top: 10px;
+}
